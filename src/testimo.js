@@ -30,7 +30,7 @@ const testimonials = [
         image:
             'asset/test2.jpg',
         content:
-            'Orion started a project from my vision, not a way to usually get off on the right track but they would create features that I had not considered and the application evolved into something much better than I thought it could! so thats why this is the best website development company in India.'
+            'WebsiteBuilders Goa started a project from my vision, not a way to usually get off on the right track but they would create features that I had not considered and the application evolved into something much better than I thought it could! so thats why this is the best website development company in India.'
 
             
     },
