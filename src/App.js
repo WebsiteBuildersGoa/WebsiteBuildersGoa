@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { ChakraProvider } from "@chakra-ui/react"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,Switch} from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
 import { WithSub } from "./NavBar";
