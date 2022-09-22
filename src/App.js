@@ -30,6 +30,7 @@ function App() {
     <div className="main">
       <ChakraProvider>
         <BrowserRouter>
+    <Switch>
           <WithSub />
           <Routes>
 
@@ -52,6 +53,7 @@ function App() {
             <Route path="/policies" element={< Milestones />} />
             <Route path="/terms" element={<Hooked />} />
           </Routes>
+</Switch>
           <Footerbottom></Footerbottom>
         </BrowserRouter>
       </ChakraProvider>
