@@ -1,4 +1,4 @@
-// import { FaBeer } from 'react-icons/fa';
+
 
 import Features from './services';
 import BrandStats from "./stats";
@@ -18,12 +18,12 @@ export const Home = () => {
 <div><SplitScreen></SplitScreen>
       <div><BrandStats></BrandStats></div>
       <div><Features></Features></div>
-      </div><div><OverviewSection></OverviewSection></div>     
+      <div><OverviewSection></OverviewSection></div>     
       <div><Testimonials></Testimonials></div>
       <div><Question></Question></div>
-      {/* <div><BlogCards ></BlogCards ></div> */}
+     
   
-      {/* <h3> Lets go for a <FaBeer color='red' />? </h3> */}
+     
 
     </>
   );
