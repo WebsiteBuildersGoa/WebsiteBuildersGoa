@@ -57,7 +57,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <Container maxW='2xl'mt="10px"mb="10px" p={{ base: 5, md: 10 }}>
+        <Container maxW='2cl'mt="10px"mb="10px" p={{ base: 5, md: 10 }}>
             <Box bgGradient="linear(to-br,  white, #15aabf)" bgClip="text" fontSize="3xl" fontWeight="bold" mb={20} textAlign="center">
             Check Out What Our Customers Have To Say About Us
             </Box>
