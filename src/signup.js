@@ -44,7 +44,7 @@ const Contact = () => {
         <Container maxW="7xl" py={16} px={{ base: 4, md: 8 }}>
             <Stack spacing={10}>
                 <Flex align="center" justify="center" direction="column">
-                    <Heading  bgGradient="linear(to-br,  white, #26f705)" bgClip="text"fontSize="4xl" mb={2}>
+                    <Heading  bgGradient="linear(to-br,white, #26f705)"  bgClip="text"fontSize="4xl" mb={2}>
                         Contact Us
                     </Heading>
                     <Text
