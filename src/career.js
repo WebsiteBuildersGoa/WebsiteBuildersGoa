@@ -47,7 +47,7 @@ export default function JoinOurTeam() {
                 columns={{ base: 1, md: 2 }}
                 spacing={{ base: 10, lg: 32 }}
                 py={{ base: 10, sm: 20, lg: 32 }}>
-                <Stack spacing={{ base: 10, md: 20 }}>
+                <Stack ml='30px'spacing={{ base: 10, md: 20 }}>
                     <Heading color='white'
                         lineHeight={1.1}
                         fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}>
