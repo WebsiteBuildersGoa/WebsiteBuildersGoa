@@ -28,9 +28,9 @@ const overviewList = [
 
 const OverviewSection = () => {
     return (
-        <Container maxW="6xl" py={10}>
+        <Container maxW="6xl" py={2}>
             <chakra.h2  
-            bgGradient="linear(to-br,  white, #15aabf)" bgClip="text"fontSize="4xl" fontWeight="bold" textAlign="center" mb={16}>
+             bgGradient="linear(to-br,  white, #26f705)" bgClip="text"fontSize="4xl" fontWeight="bold" textAlign="center" mb={16}>
                 WE DESIGN WEBSITES THAT GENERATE RESULTS
                
             </chakra.h2>
@@ -39,15 +39,15 @@ const OverviewSection = () => {
             </chakra.h3> */}
             <Stack
                 direction={{ base: 'column', md: 'row' }}
-                spacing={{ base: 0, md: 3 }}
+                spacing={{ base: 0, md:3 }}
                 justifyContent="center"
                 alignItems="center"
             >
                 <VStack spacing={4} alignItems="flex-start" mb={{ base: 5, md: 0 }} maxW="md">
                     {overviewList.map((data) => (
-                        <Box  color="#15ef29" key={data.id}>
+                        <Box  color="#ee6895" key={data.id}>
                             <HStack spacing={6}>
-                                <Flex
+                                {/* <Flex
                                     fontWeight="bold"
                                     boxShadow="md"
                                     color="white"
@@ -59,10 +59,10 @@ const OverviewSection = () => {
                                     h={2}
                                 >
                                     {data.id}
-                                </Flex>
+                                </Flex> */}
                                 <Text  fontSize="30">{data.label}</Text>
                             </HStack>
-                            <Text  justifyContent="space-between" textAlign="justify" fontSize="md" color="white" ml={8}>
+                            <Text  justifyContent="space-between" textAlign="justify" fontSize="md" color="white" ml={0}>
                                 {data.subLabel}
                             </Text>
                         </Box>
