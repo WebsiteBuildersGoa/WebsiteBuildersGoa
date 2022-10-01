@@ -36,7 +36,7 @@ const planList = [
 
 const BrandStats = () => {
     return (
-        <Container bg='#000000c9' maxW="6xl" p={{ base: 4, sm: 10 }}>
+        <Container my='30px'bg='#000000c9' maxW="6xl" p={{ base: 4, sm: 10 }}>
             <Stack direction={{ base: 'column', md: 'row' }} justifyContent="space-between">
                 <Stack spacing={10}>
                     {/* <chakra.h1 bgGradient="linear(to-br,  white, #15aabf)" bgClip="text" fontSize="4xl" lineHeight={1.2} fontWeight="bold">
@@ -49,7 +49,7 @@ const BrandStats = () => {
                     </Text> */}
 
                     <Stack spacing={6}>
-                        <Text fontSize="3xl" bgGradient="linear(to-br,  white, #15aabf)" bgClip="text">
+                        <Text fontSize="3xl" bgGradient="linear(to-br,  white,#26f705)" bgClip="text">
                             Why Choose Us?
                         </Text>
                         {planList.map((data, index) => (
@@ -69,13 +69,13 @@ const BrandStats = () => {
                                 py={1}
                                 pr={1}
                                 borderLeft="4px solid"
-                                borderLeftColor="#15ef29"
+                                borderLeftColor="white"
                                 justifyContent="space-between"
                             >
-                                <Box fontSize="40px" fontWeight="bold" color="#15ef29">
+                                <Box fontSize="40px" fontWeight="bold" color="white">
                                     {data.score}
                                 </Box>
-                                <Text bgGradient="linear(to-br,  white, #15aabf)" bgClip="text" fontSize="17">{data.label}</Text>
+                                <Text bgGradient="linear(to-br,  white, #26f705)" bgClip="text" fontSize="xl"fontweight='600'>{data.label}</Text>
                             </Stack>
                         ))}
                     </SimpleGrid>
