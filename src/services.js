@@ -235,8 +235,8 @@ const features = [
 
 const Features = () => {
     return (
-        <Container background-color=' #010101b8' maxW="7xl" p={{ base: 5, md: 10 }}>
-            <chakra.h3 bgGradient="linear(to-br,  white, #15aabf)" bgClip="text"fontSize="4xl" fontWeight="bold" mb={20} textAlign="center">
+        <Container my='30px' background-color=' #010101b8' maxW="7xl" p={{ base: 5, md: 10 }}>
+            <chakra.h3 color='white'fontSize="4xl" fontWeight="bold" mb={20} textAlign="center">
                 Everything you need and more
             </chakra.h3>
             <SimpleGrid columns={{ base: 1, sm: 0, md: 2 }} placeItems="center" spacing={10} mb={4}>
@@ -258,7 +258,7 @@ const Features = () => {
                             marginBottom="30px"
                             w="max-content"
                             color="black"
-                            bgGradient="linear(to-br,#239847, rgb(5 243 5))"
+                            bgGradient="linear(to-br,#ee6895, rgb(5 243 5))"
                             rounded="md"
                             marginInline="auto"
                             pos="absolute"
@@ -275,7 +275,7 @@ const Features = () => {
                         <Text justifyContent="space-between" textAlign="justify"fontSize="md" mt={4}>
                             {feature.content}
                         </Text >
-                        <Link href="served" mt={4} fontSize="xl" fontWeight="semibold" color="rgb(5 243 5)">
+                        <Link href="served" mt={4} fontSize="xl" fontWeight="semibold" color="white">
                             Learn more →
                         </Link>
                     </Box>
