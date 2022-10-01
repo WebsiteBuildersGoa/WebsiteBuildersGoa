@@ -2,8 +2,6 @@
 
 import Features from './services';
 import BrandStats from "./stats";
-// import HeroSection from "./hero";
-// import BlogCards from "./blog";
 import Question from './quote';
 import SplitScreen from './herom';
 import Testimonials from './testimo';
