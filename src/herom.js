@@ -4,6 +4,8 @@ import {
   Image,
   Stack,
   Text,
+  Button,
+  Link,
   useBreakpointValue,
 } from '@chakra-ui/react';
 
@@ -35,6 +37,22 @@ export default function SplitScreen() {
           <Text justifyContent="space-between" textAlign="justify"mb="40px"fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
           WebsiteBuilders Goa is a digital marketing and a website designing company with highly qualified professionals. Our team is highly skilled and experienced in understanding the general consumer behaviours and moderating the UX of the website according to the purchase behaviours.
           </Text>
+          <Button
+            as={Link}
+            display={{ base: "none", md: "inline-flex" }}
+            fontSize={"sm"}
+            fontWeight={700}
+            color={"white"}
+             bgGradient="linear(to-br,  white, #26f705)" bgClip="text"
+            href={"pricing"}
+            _hover={{
+              textDecoration: "none",
+              color: "white",
+            }}
+
+          >
+            Get Free Quote
+          </Button>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={6}>
           </Stack>
         </Stack>
@@ -48,6 +66,7 @@ export default function SplitScreen() {
             'asset/scott.jpg'
           }
         />
+       
       </Flex>
     </Stack>
   );
