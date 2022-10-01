@@ -1,6 +1,6 @@
 import {
   Box,
-  
+
   Flex,
   Text,
   IconButton,
@@ -45,18 +45,23 @@ export const WithSub = () => {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex
+          herf='Home' flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
 
-          <Box  >
-          <Image
-         boxSize={'100px'}
-          alt={'Login Image'}
-          objectFit={'contain'}
-          src={
-            'asset/picd/Transparent 1.png'
-          }
-        />
-        </Box>
+          <Box>
+            <a href="/">
+              <Image
+
+                boxSize={'100px'}
+                alt={'Login Image'}
+                objectFit={'contain'}
+                src={
+                  'asset/picd/Transparent 1.png'
+                }
+              />
+            </a>
+
+          </Box>
 
           <Flex display={{ base: "none", md: "flex" }} ml={14}>
             <DesktopNav />
@@ -73,7 +78,7 @@ export const WithSub = () => {
             fontSize={"sm"}
             fontWeight={700}
             color={"white"}
-            bgGradient="linear(to-br,  white, #15aabf)" bgClip="text"
+            bgGradient="linear(to-br,  white, #26f705)" bgClip="text"
             href={"signup"}
             _hover={{
               textDecoration: "none",
@@ -98,22 +103,22 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack   margin='auto' direction={"row"} spacing={6}>
+    <Stack margin='auto' direction={"row"} spacing={6}>
       {NAV_ITEMS.map((navItem) => (
-        <Box   key={navItem.label}>
+        <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
-           
+
                 p={2}
-                href={navItem.href ?? ""}
+                // href={navItem.href ?? ""}
                 fontSize={"sm"}
                 fontWeight={700}
-                bgGradient="linear(to-br,  white, #15aabf)" bgClip="text"
-                _hover={{
-                  textDecoration: "none",
-                  color: 'white',
-                }}
+                bgGradient="linear(to-br,  white, #26f705)" bgClip="text"
+              // // _hover={{
+              //   textDecoration: "none",
+              // //   color: 'white',
+              // }}
               >
                 {navItem.label}
               </Link>
@@ -179,20 +184,20 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children }, href = "") => {
+const MobileNavItem = ({ label, children }, href = "Home") => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={4}
-        as={Link}
-        href={href ?? ""}
+        // as={Link}
+        // href={href ?? ""}
         justify={"space-between"}
         align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
+        // _hover={{
+        //   textDecoration: "none",
+        // }}
       >
         <Text fontWeight={600} color={'black'}>
           {label}
