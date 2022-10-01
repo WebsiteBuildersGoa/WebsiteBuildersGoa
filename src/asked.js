@@ -3,7 +3,7 @@ import Index from './Quset';
 
 const Asking = () => {
   return (
-     <Container maxW="7xl" p="16" ml="5">
+     <Container maxW="7xl"  mx="auto">
    
 
       <Index />
@@ -14,6 +14,7 @@ const Asking = () => {
 const index = () => {
   return (
     <Stack
+    
       direction={{ base: 'column', md: 'row' }}
       spacing={5}
       alignItems={{ base: 'flex-start', md: 'center' }}
