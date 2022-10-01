@@ -3,22 +3,16 @@ import { InfoIcon } from '@chakra-ui/icons';
 
 export default function Informed() {
   return (
-    <Box maxw="full" textAlign="center" py={14} px={8}>
-      {/* <InfoIcon boxSize={'50px'} color={'blue.500'} /> */}
-      {/* <Heading color='white'as="h2" size="xl" mt={6} mb={2}>
-          SERVICES
-        </Heading> */}
-       
-      <Text  textAlign="center"fontsize='4xl' fontWeight='800'   bgGradient="linear(to-br,  white, #15aabf)" bgClip="text">
-      APP DEVELOPMENT AND MANAGED IT SERVICES 
-          
+    <Box mx="auto" display={'flex'} my='0' justifyContent='center' textAlign="justify" py={5} px={0}> 
+   
+
+      <Text justifyContent='center' textAlign="justify" fontSize='3xl' fontWeight='800' bgGradient="linear(to-br,  white, #15aabf)" bgClip="text">
+        APP  DEVELOPMENT  AND MANAGED  IT  SERVICES
+
       </Text>
+
       
-      <br></br>
-      <Text textAlign='center'fontsize='4xl' fontWeight='800'   bgGradient="linear(to-br,  white, #15aabf)" bgClip="text">
-    
-            Things we are famous for!!
-      </Text>
+     
     </Box>
   );
 }
