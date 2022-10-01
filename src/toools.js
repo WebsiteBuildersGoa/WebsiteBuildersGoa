@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment,flex } from 'react';
 import { Container, Text, Stack, Avatar, Icon, Image, Box, SimpleGrid } from '@chakra-ui/react';
 // Here we have used react-icons package for the icon
 import { ImQuotesLeft } from 'react-icons/im';
@@ -82,19 +82,20 @@ const invest = [
 
 const Invest = () => {
     return (
-        <Container maxW='full' mt="0px" mb="0px" justify={'center'} p={{ base: 5, md: 8 }}>
+        <Container display={flex} justifyContent='center' maxW='1000px' mx="auto"  p={{ base: 5, md: 8 }}>
 
-
+<Box>
             {invest.map((obj, index) => (
                 <Fragment key={index}>
                     <Stack
+                   
                         direction={{ base: 'column', sm: 'row' }}
                         bgGradient="linear(to-br, #42e14e, blue.300)"
                         spacing={{ base: 0, sm: 10 }}
                         marginBottom="100px"
                         p={{ base: 4, sm: 10 }}
                         rounded="lg"
-                        justify="center"
+                        justifyContent="center"
                     >
                         {/* <Box width="20rem" pos="relative" d={{ base: 'none', sm: 'block' }}>
                             {/* <Image
@@ -107,8 +108,8 @@ const Invest = () => {
                             /> */}
                         {/* </Box> */} */
 
-                        <Stack justify="center" direction="column" spacing={4} textAlign="center" maxW="4xl">
-                            <Text fontWeight="bold" fontSize="3xl">
+                        <Stack justifyContent="center" direction="column" spacing={4} textAlign="center" maxW="4xl">
+                            <Text fontWeight="bold" fontSize="3xl" display={flex} justifyContent="center">
                                 {obj.name}
                             </Text>
                             <Text  justifyContent="space-between" textAlign="justify"fontSize="md" fontWeight="medium">
@@ -123,7 +124,7 @@ const Invest = () => {
                 </Fragment>
 
             ))}
-
+</Box>
         </Container>
     );
 
