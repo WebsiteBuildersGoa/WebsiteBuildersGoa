@@ -34,7 +34,7 @@ const Milestones = () => {
           </defs>
         </svg>
         {/* <Stack pos="relative" zIndex={1} direction="column" spacing={5} textAlign="left"> */}
-          <chakra.h1 mb="40px"justifyContent="center" textAlign="center" bgGradient="linear(to-br,  white, #15aabf)" bgClip="text" fontSize="4xl" lineHeight={10} fontWeight="bold">
+          <chakra.h1 mb="40px"justifyContent="center" textAlign="center" bgGradient="linear(to-br,  white,#26f705)" bgClip="text" fontSize="4xl" lineHeight={10} fontWeight="bold">
           PRIVACY POLICY
           </chakra.h1>
           <chakra.h1 mx="auto"justifyContent="space-between" textAlign="justify"color="gray.400" fontSize="xl" maxW="600px" lineHeight={2}>
