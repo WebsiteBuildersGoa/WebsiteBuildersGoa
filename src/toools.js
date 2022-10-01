@@ -1,15 +1,8 @@
-import { Fragment,flex } from 'react';
-import { Container, Text, Stack, Avatar, Icon, Image, Box, SimpleGrid } from '@chakra-ui/react';
+import { Fragment } from 'react';
+import { Container, Text, Stack, Box, Flex} from '@chakra-ui/react';
 // Here we have used react-icons package for the icon
-import { ImQuotesLeft } from 'react-icons/im';
 
-// interface TestimonialAttributes {
-//   name: string;
-//   position: string;
-//   company: string;
-//   content: string;
-//   image: string;
-// }
+
 
 const invest = [
     {
@@ -41,48 +34,12 @@ const invest = [
         content:
             'WebsiteBuilder Goa is a leading specialised HRMS app and mobile development company in India. Take the leap to empowering your workforce with WBGs advanced human resources tools and app development solutions. Our new age Personalized Cloud Based HRMS with Mobile apps enables HR professionals to manage the employee life cycle seamlessly. Experience the new age and enterprise driven HRMS suite to build better and smarter workplaces. Are you ready to embark on your digital transformative human resource journey?'
     },
-    // {
-    //     name: '',
-    //     image:
-    //         'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
-    //     content:
-    //         'WebsiteBuilder Goa is a leading specialised HRMS app and mobile development company in India. Take the leap to empowering your workforce with Orion’s advanced human resources tools and app development solutions. Our new age Personalized Cloud Based HRMS with Mobile apps enables HR professionals to manage the employee life cycle seamlessly. Experience the new age and enterprise driven HRMS suite to build better and smarter workplaces. Are you ready to embark on your digital transformative human resource journey?'
-    // },
-    // {
-    //     name: 'Cloud consulting',
-    //     image:
-    //         'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
-    //     content:
-    //         'o achieve your desired result, our team follows three simple processes. The assessment is the first stage. Our cloud specialists collaborate with your business and technical teams to fully comprehend your company objectives. Determine the technological feasibility. Calculate your return on investment. With the second stage Our cloud professionals can help you construct a cutting-edge solution by providing cloud solution architecture, resource/app consolidation, and cloud resource mapping. In the final phase of cloud consulting, we assist our customers in developing a phased migration strategy and roadmap to minimise risks and ensure a smooth transition.'
-    // },
-    // {
-    //     name: 'Blockchain Services',
-    //     image:
-    //         'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
-    //     content:
-    //         'Augment your existing IT ecosystems with strategic integrations and by tapping into the decentralized magnificence. Partner with Orion to engineer reliable solutions with zero compromise on security. Augment business growth and transform your market presence with consensus algorithms, crypto, individual nodes, custom architectures and much more.'
-    // },
-    // {
-    //     name: 'NFT Development Services',
-    //     image:
-    //         'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
-    //     content:
-    //         'WebsiteBuilder Goa is a leading specialised HRMS app and mobile development company in India. Take the leap to empowering your workforce with Orion’s advanced human resources tools and app development solutions. Our new age Personalized Cloud Based HRMS with Mobile apps enables HR professionals to manage the employee life cycle seamlessly. Experience the new age and enterprise driven HRMS suite to build better and smarter workplaces. Are you ready to embark on your digital transformative human resource journey?'
-    // },
-    // {
-    //     name: 'Cyber security',
-    //     image:
-    //         'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
-    //     content:
-    //         'WebsiteBuilder Goa is a leading specialised HRMS app and mobile development company in India. Take the leap to empowering your workforce with Orion’s advanced human resources tools and app development solutions. Our new age Personalized Cloud Based HRMS with Mobile apps enables HR professionals to manage the employee life cycle seamlessly. Experience the new age and enterprise driven HRMS suite to build better and smarter workplaces. Are you ready to embark on your digital transformative human resource journey?'
-    // },
-
-
+   
 ];
 
 const Invest = () => {
     return (
-        <Container display={flex} justifyContent='center' maxW='1000px' mx="auto"  p={{ base: 5, md: 8 }}>
+        <Container display="flex" justifyContent='center' maxW='1000px' mx="auto"  p={{ base: 5, md: 8 }}>
 
 <Box>
             {invest.map((obj, index) => (
@@ -97,19 +54,10 @@ const Invest = () => {
                         rounded="lg"
                         justifyContent="center"
                     >
-                        {/* <Box width="20rem" pos="relative" d={{ base: 'none', sm: 'block' }}>
-                            {/* <Image
-                                size="2xl"
-                                pos="absolute"
-                                rounded="lg"
-                                src={obj.image}
-                                top="-3.8rem"
-                                boxShadow="lg"
-                            /> */}
-                        {/* </Box> */} */
+                       
 
                         <Stack justifyContent="center" direction="column" spacing={4} textAlign="center" maxW="4xl">
-                            <Text fontWeight="bold" fontSize="3xl" display={flex} justifyContent="center">
+                            <Text fontWeight="bold" fontSize="3xl" display='flex' justifyContent="center">
                                 {obj.name}
                             </Text>
                             <Text  justifyContent="space-between" textAlign="justify"fontSize="md" fontWeight="medium">
