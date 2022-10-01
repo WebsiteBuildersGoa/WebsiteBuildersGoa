@@ -15,6 +15,7 @@ export default function Deveops() {
     return (
         <div>
             <Flex
+           
                 w={'full'}
                 h={'50vh'}
                 backgroundImage={
@@ -24,10 +25,11 @@ export default function Deveops() {
                 backgroundPosition={'center center'}>
                 <VStack
                     w={'full'}
+                    
                     justify={'center'}
                     px={useBreakpointValue({ base: 4, md: 8 })}
                     bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-                    <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+                    <Stack   maxW={'2xl'} align={'flex-start'} spacing={6}>
                         <Text
                             color={'cyan.200'}
                             textAlign="center"
@@ -56,9 +58,11 @@ export default function Deveops() {
                 </VStack>
 
             </Flex>
-            <Flex> <div><Informed></Informed></div></Flex>
-            {<Flex> <div><Invest></Invest></div></Flex>}
-            {<Flex> <div><Asking></Asking></div></Flex>}
+             <Informed></Informed>
+          
+                <div>
+                    <Invest></Invest></div>
+             <div><Asking></Asking></div>
         </div>
     );
 
