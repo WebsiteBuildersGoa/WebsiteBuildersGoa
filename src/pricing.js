@@ -33,7 +33,7 @@ function PriceWrapper({ children }) {
 export default function ThreeTierPricing() {
   return (
     <>
-      <Box py={8}>
+      <Box margin='auto' py={8}>
         <VStack spacing={10} textAlign="center">
           <Heading as="h1"
             color="white"
@@ -54,14 +54,14 @@ export default function ThreeTierPricing() {
         </VStack>
         <Stack
           color="white"
-          direction={{ base: "column", md: "row" }}
+          direction={['column', 'row']}
           textAlign="center"
           justify="center"
-          spacing={{ base: 4, lg: 10 }}
+          spacing={{ base: 2, lg: 5 }}
           py={12}
         >
           <PriceWrapper>
-            <Box py={9} px={8}>
+            <Box py={9} px={6}>
               <Text fontWeight="500" fontSize="2xl">
                 Bronze Website Package
 
@@ -102,35 +102,35 @@ export default function ThreeTierPricing() {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Professional Email Id 
+                  Professional Email Id
                 </ListItem>
               </List>
-              <Box w="0%" pt={6}>
-                {/* <Button w="full" colorScheme="red" variant="outline">
-                  Start trial
-                </Button> */}
+              <Box w="40%" pt={10} pb={4}>
+                <Button w="full" colorScheme="red" variant="solid">
+                  Contact Us
+                </Button>
               </Box>
             </VStack>
           </PriceWrapper>
 
           <Box position="relative">
-              <Box position="absolute" top="-17px" left="50%" style={{ transform: "translate(-50%)" }}>
-                <Text
-                  textTransform="uppercase"
-                  bg={useColorModeValue("red.300", "red.700")}
-                  px={3}
-                  py={1}
-                  color={useColorModeValue("gray.900", "gray.300")}
-                  fontSize="sm"
-                  fontWeight="600"
-                  rounded="xl"
-                >
-                  Most Popular
-                </Text>
-              </Box>
-              </Box>
+            {/* <Box position="absolute" top="-17px" left="50%" style={{ transform: "translate(-50%)" }}>
+              <Text
+                textTransform="uppercase"
+                bg={useColorModeValue("red.300", "red.700")}
+                px={3}
+                py={1}
+                color={useColorModeValue("gray.900", "gray.300")}
+                fontSize="sm"
+                fontWeight="600"
+                rounded="xl"
+              >
+                Most Popular
+              </Text>
+            </Box> */}
+          </Box>
           <PriceWrapper>
-            <Box pt="7" px={8}>
+            <Box pt="7" pb={10}>
               <Text mx="auto" fontWeight="600" fontSize="2xl">
                 Silver Website Package
               </Text>
@@ -153,11 +153,11 @@ export default function ThreeTierPricing() {
               <List color='black' spacing={2} textAlign="start" px={12}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  7 Pages Business Website 
+                  7 Pages Business Website
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Customized Design 
+                  Customized Design
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
@@ -165,44 +165,45 @@ export default function ThreeTierPricing() {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Free Domain 1 Year 
+                  Free Domain 1 Year
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  SEO Ready Website 
+                  SEO Ready Website
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  SSL Certificate 
+                  SSL Certificate
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Business E-Mail 
+                  Business E-Mail
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Control Panel 
+                  Control Panel
                 </ListItem>
               </List>
-              <Box w="80%" pt={6}>
-                {/* <Button w="full" colorScheme="red" variant="outline">
-                  Start trial
-                </Button> */}
+              <Box w="40%" pt={2}>
+                <Button w="full" colorScheme="red" variant="solid">
+                  Contact us
+                </Button>
               </Box>
             </VStack>
           </PriceWrapper>
 
         </Stack>
-        <VStack
+        <Stack
           color="white"
-          direction={{ base: "column", md: "row" }}
+          direction={['column', 'row']}
           textAlign="center"
           justify="center"
           spacing={{ base: 4, lg: 10 }}
-          py={10}
+          py={12}
         >
+
           <PriceWrapper>
-            <Box py={4} px={8}>
+            <Box py={8} px={6}>
               <Text fontWeight="500" fontSize="2xl">
                 Gold+ Website Package
 
@@ -223,27 +224,27 @@ export default function ThreeTierPricing() {
               <List color='black' spacing={3} textAlign="start" px={12}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  E-Commerce Website 
+                  E-Commerce Website
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Customized Design 
+                  Customized Design
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Customized Design 
+                  Customized Design
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Free Domain 1 Year 
+                  Free Domain 1 Year
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Free Domain 1 Year 
+                  Free Domain 1 Year
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  SEO Ready Website 
+                  SEO Ready Website
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
@@ -251,21 +252,22 @@ export default function ThreeTierPricing() {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
-                  Customized Design 
+                  Customized Design
                 </ListItem>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   Wallet and Referral Integration
                 </ListItem>
-                
+
               </List>
               <Box w="80%" pt={7}>
-                {/* <Button w="full" colorScheme="red" variant="outline">
-                  Start trial
-                </Button> */}
+                <Button w="40%" colorScheme="red" variant="solid">
+                  Contact us
+                </Button>
               </Box>
             </VStack>
           </PriceWrapper>
+
 
           <PriceWrapper>
             <Box mt="10px" position="relative">
@@ -283,7 +285,7 @@ export default function ThreeTierPricing() {
                   Most Popular
                 </Text>
               </Box>
-              <Box py={8} px={8}>
+              <Box py={7} px={4}>
                 <Text fontWeight="500" fontSize="2xl">
                   Diamond Website Package
 
@@ -320,7 +322,7 @@ export default function ThreeTierPricing() {
                   </ListItem>
                   <ListItem>
                     <ListIcon as={FaCheckCircle} color="green.500" />
-                    iOS Hybrid APP 
+                    iOS Hybrid APP
                   </ListItem>
                   <ListItem>
                     <ListIcon as={FaCheckCircle} color="green.500" />
@@ -339,17 +341,17 @@ export default function ThreeTierPricing() {
                     Free Hosting 1 Year
                   </ListItem>
                 </List>
-                <Box w="80%" pt={7}>
-                  {/* <Button w="full" colorScheme="red">
-                    Start trial
-                  </Button> */}
+                <Box w="30%" pt={7}>
+                  <Button w="full" colorScheme="red">
+                    Contact Us
+                  </Button>
                 </Box>
               </VStack>
             </Box>
           </PriceWrapper>
+        </Stack>
 
 
-        </VStack>
         <Center><Index></Index></Center>
       </Box>
     </>
