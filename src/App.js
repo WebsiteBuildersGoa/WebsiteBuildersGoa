@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import "./App.css";
 import { Home } from "./Home";
 import { WithSub } from "./NavBar";
-// import MainMint from "./MainMint";
+
 import Footerbottom from "./footerall";
 // import NotFound from './404';
 import ThreeTierPricing from "./pricing";
